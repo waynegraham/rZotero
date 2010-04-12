@@ -1,0 +1,7 @@
+pkg
+.DS_Store
+log
+doc
+rZotero-*.gem
+rdoc
+*.gemspec

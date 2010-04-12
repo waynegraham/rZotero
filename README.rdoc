@@ -1,0 +1,30 @@
+= RZotero
+A simple, extensible Ruby client for the Zotero API.
+
+== Installation
+	gem install rzotero
+	
+== Usage
+  require 'rubygems'
+  require 'rzotero'
+
+  USER_NAME = '<your username>'
+  API_KEY = '<your api key>'
+
+  zotero = RZotero.new(API_KEY)
+
+  # Search
+  results = zotero.get('slavery')
+
+  puts results.inspect
+
+== Related Resources & Projects
+
+* {Zotero}[http://www.zotero.org/support/dev/start] -- Developer documentation for Zotero
+
+== Extending this project
+* Fork the project
+* Create a feature or fix a bug
+* Add *tests* for it (so I don't break this in a future version).
+* Commit (but don't change Rakefile, version, or history)
+* Send a pull request.  
