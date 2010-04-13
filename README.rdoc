@@ -1,30 +1,34 @@
-= RZotero
+= rzotero
+
 A simple, extensible Ruby client for the Zotero API.
 
 == Installation
-	gem install rzotero
-	
+  gem install rzotero
+
+== Dependencies
+rzotero uses the Nokogiri gem to parse the RSS feed from Zotero
+
 == Usage
   require 'rubygems'
   require 'rzotero'
 
-  USER_NAME = '<your username>'
-  API_KEY = '<your api key>'
+  zotero = RZotero.new('username', 'api_key')
 
-  zotero = RZotero.new(API_KEY)
+  items = zotero.items
+  item = zotero.item(2)
+  collections = zotero.collections
+  collection = zotero.collection(1)
 
-  # Search
-  results = zotero.get('slavery')
+== Note on Patches/Pull Requests
+ 
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
 
-  puts results.inspect
+== Copyright
 
-== Related Resources & Projects
-
-* {Zotero}[http://www.zotero.org/support/dev/start] -- Developer documentation for Zotero
-
-== Extending this project
-* Fork the project
-* Create a feature or fix a bug
-* Add *tests* for it (so I don't break this in a future version).
-* Commit (but don't change Rakefile, version, or history)
-* Send a pull request.  
+Copyright (c) 2010 Wayne Graham. See LICENSE for details.
