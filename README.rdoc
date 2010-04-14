@@ -9,15 +9,20 @@ A simple, extensible Ruby client for the Zotero API.
 rzotero uses the Nokogiri gem to parse the RSS feed from Zotero
 
 == Usage
+
+The Zotero API currently requires your user ID (not your user name) to properly construct the API call. If you need to look up your user id, head over to {Zotero ID Finder}[http://zotero-id-finder.heroku.com/]
+
   require 'rubygems'
   require 'rzotero'
 
-  zotero = RZotero.new('username', 'api_key')
+  zotero = RZotero.new(1, 'api_key')
 
-  items = zotero.items
-  item = zotero.item(2)
-  collections = zotero.collections
-  collection = zotero.collection(1)
+  puts zotero.user
+  puts zotero.key
+  puts zotero.items
+  puts zotero.item(2)
+  puts zotero.collections
+  puts zotero.collection(1)
 
 == Note on Patches/Pull Requests
  
@@ -31,4 +36,4 @@ rzotero uses the Nokogiri gem to parse the RSS feed from Zotero
 
 == Copyright
 
-Copyright (c) 2010 Wayne Graham. See LICENSE for details.
+Copyright (c) 2010 Wayne Graham. See link:LICENSE for details.
