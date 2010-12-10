@@ -1,0 +1,5 @@
+== TODO
+
+symbols for start, end, 
+
+will_paginate array

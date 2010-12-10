@@ -8,6 +8,9 @@ A simple, extensible Ruby client for the Zotero API.
 == Dependencies
 rzotero uses the Nokogiri gem to parse the RSS feed from Zotero
 
+== Keys
+Zotero requires private keys for accessing your non-private data. You can request a key from {Zotero}[https://www.zotero.org/settings/keys/new]
+
 == Usage
 
 The Zotero API currently requires your user ID (not your user name) to properly construct the API call. If you need to look up your user id, head over to {Zotero ID Finder}[http://zotero-id-finder.heroku.com/]
