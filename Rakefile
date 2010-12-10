@@ -12,7 +12,10 @@ begin
       gem.authors = ["Wayne Graham"]
       
       # gem dependencies
+      gem.add_dependency 'faraday', ">= 0.5.3"
+      gem.add_dependency 'faraday_middleware', ">= 0.3.0"
       gem.add_dependency "nokogiri", ">= 1.4.0"
+      gem.add_dependency 'multi_xml', '> 0.2.0'
       
       # dev dependencies
       gem.add_development_dependency "rspec", ">= 1.2.9"
