@@ -24,7 +24,7 @@ module Zotero
 end
 
 
-class RZotero::client
+class Zotero::client
   
   BASE_URL = 'https://api.zotero.org'
   

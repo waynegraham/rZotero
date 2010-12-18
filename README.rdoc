@@ -18,7 +18,7 @@ The Zotero API currently requires your user ID (not your user name) to properly 
   require 'rubygems'
   require 'rzotero'
 
-  zotero = RZotero.new(1, 'api_key')
+  zotero = Zotero.new(1, 'api_key')
 
   puts zotero.user
   puts zotero.key

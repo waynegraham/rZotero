@@ -18,7 +18,8 @@ begin
       gem.add_dependency 'multi_xml', '> 0.2.0'
       
       # dev dependencies
-      gem.add_development_dependency "rspec", ">= 1.2.9"
+      gem.add_development_dependency "rspec"
+      gem.add_development_dependency "simplecov", ">=0.3.7"
       gem.add_development_dependency "fakeweb", ">= 1.2.8"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end

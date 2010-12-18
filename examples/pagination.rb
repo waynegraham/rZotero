@@ -6,7 +6,7 @@ require 'openurl'
 require 'will_paginate'
 
 
-zotero = RZotero.new(43, 'SqbbheQDVlJQUgd9NQVgnUjT')
+zotero = Zotero.new(43, 'SqbbheQDVlJQUgd9NQVgnUjT')
 
 # puts zotero.user
 # puts zotero.key

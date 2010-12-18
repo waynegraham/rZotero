@@ -6,7 +6,7 @@ require 'openurl'
 require 'pp'
  
 
-zotero = RZotero.new(43, 'knpzrwh1pos4ggtzqt1y4195')
+zotero = Zotero.new(43, 'knpzrwh1pos4ggtzqt1y4195')
 
 puts zotero.user
 puts zotero.key

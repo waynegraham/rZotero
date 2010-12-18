@@ -1,0 +1,12 @@
+lib/zotero/connection.rb 57a17284282e01f93e57e2f2d947b09d98be280a
+lib/zotero/version.rb a6ebadbc527478ecb7c0da043655f688edfdd3c7
+lib/zotero/error.rb 6b03d33bd981ed7439ca356f1ed055add93a26dd
+lib/zotero/configuration.rb 433cf37786ec3d35e43233a7e54bbbbbecda79aa
+lib/zotero/client/tags.rb b6993aa5d03c950d73fd03d32bff0df0ec23a817
+lib/zotero/client/items.rb eca08fd16462e1a254d22e4e60afa5eabdf02580
+lib/zotero/authentication.rb 7f194b882e8413543ead6b47e41358cf2a85f6a8
+lib/zotero/client/utils.rb 09d3180981bc35c834dc8d07bcbc4dc45e73a779
+lib/zotero/request.rb cc67c12f302e22edcf96b8990c1f2917dc472984
+lib/zotero/client.rb 1f97666f6e8c11d0346846640ccff8dc33141fa0
+lib/zotero/api.rb cd236a3f2a3aaca8218f686f88996811dc9c2096
+lib/rzotero.rb c5607c01f8cd1563dae8ffe956100f8969257110
