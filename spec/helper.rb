@@ -4,5 +4,6 @@ SimpleCov.start
 
 require 'rspec'
 require 'webmock/rspec'
+require 'zotero'
 
 
