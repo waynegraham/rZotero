@@ -37,7 +37,7 @@ Here are some ways *you* can contribute:
 * [finacially][]
 
 [issues]: https://github.com/waynegraham/zotero/issues
-[financially]: http://pledgie.com/campaigns/
+[financially]: http://pledgie.com/campaigns/16937
 
 All contributors will be added to the [history][] and will receive the
 respect and gratitude of the community.

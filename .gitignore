@@ -3,8 +3,10 @@
 *~
 .bundle
 .DS_Store
+.yardoc
 .rvmrc
 Gemfile.lock
 coverage/*
+doc/*
 log/*
 pkg/*
