@@ -1,4 +1,10 @@
 *.gem
+*.rbc
+*~
 .bundle
+.DS_Store
+.rvmrc
 Gemfile.lock
+coverage/*
+log/*
 pkg/*
