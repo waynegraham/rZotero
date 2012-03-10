@@ -35,5 +35,6 @@ eos
   gem.add_development_dependency 'simplecov'
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'webmock'
+  gem.add_development_dependency 'yard'
   # gem.add_runtime_dependency "rest-client"
 end
