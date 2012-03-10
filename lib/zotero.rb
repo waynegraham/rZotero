@@ -1,5 +1,7 @@
 require "zotero/version"
 
 module Zotero
-  # Your code goes here...
+  def self.zotero
+
+  end
 end
