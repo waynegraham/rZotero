@@ -1,9 +1,9 @@
-# The Zotero Ruby Gem
+# The Zotero Ruby Gem [![Build Status](https://secure.travis-ci.org/waynegraham/rZotero.png?branch=rewrite)][travis] [![Dependency Status](https://gemnasium.com/waynegraham/rZotero.png?travis)][gemnasium]
 
 A Ruby wrapper for the Zotero API.
 
-[travis]: http://travis-ci.org/waynegraham/zotero
-[gemnasium]: https://gemnasium.com/waynegraham/zotero
+[travis]: http://travis-ci.org/waynegraham/rZotero
+[gemnasium]: https://gemnasium.com/waynegraham/rZotero
 
 ## <a name="installation"></a>Installation
     
