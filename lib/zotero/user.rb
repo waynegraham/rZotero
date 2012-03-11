@@ -3,6 +3,8 @@ require 'zotero/base'
 module Zotero
   class User < Zotero::Base
 
+    lazy_attr_reader :id
+
     # @param other [Zotero::User]
     # @return [Boolean]
     def ==(other)
