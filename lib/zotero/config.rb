@@ -48,7 +48,6 @@ module Zotero
       :proxy,
       :search_endpoint,
       :user_agent,
-      :media_endpoint
     ]
 
     attr_accessor *VALID_OPTIONS_KEYS

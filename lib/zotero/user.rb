@@ -1,10 +1,8 @@
 require 'zotero/base'
 
 module Zotero
-  class User
+  class User < Zotero::Base
 
-    #alias :verified? :verified
-    
     # @param other [Zotero::User]
     # @return [Boolean]
     def ==(other)
