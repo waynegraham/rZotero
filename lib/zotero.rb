@@ -1,7 +1,7 @@
 require 'zotero/version'
 
 gem 'oauth', '>= 0.5.1'
-require oauth
+require 'oauth'
 
 module Zotero
     @default_site = 'https://api.zotero.org' # Version can be appended here, or passed in by the user
