@@ -1,82 +1,64 @@
-# The Zotero Ruby Gem [![Build Status](https://secure.travis-ci.org/waynegraham/rZotero.png?branch=rewrite)][travis] [![Dependency Status](https://gemnasium.com/waynegraham/rZotero.png?travis)][gemnasium]
+# The Zotero Ruby Gem [![Build Status](https://secure.travis-ci.org/waynegraham/rZotero.png?branch=clean_rewrite)][travis] [![Dependency Status](https://gemnasium.com/waynegraham/rZotero.png?travis)][gemnasium]
 
 A Ruby wrapper for the Zotero API.
 
 [travis]: http://travis-ci.org/waynegraham/rZotero
 [gemnasium]: https://gemnasium.com/waynegraham/rZotero
 
-## <a name="installation"></a>Installation
-    
-    gem install zotero
+## Installation
 
-## <a name="documentation"></a>Documentation
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'zotero'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install zotero
+
+## Usage
+
+TODO: Write usage instructions here
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+## Documentation
 
 [documenation]: http://rdoc.info/gems/zotero
 
 [follow]: https://twitter.com/waynegraham
 
-## <a name="contributing"></a>Contributing
+## Development
 
-In the spirit of [free software][free-sw], **everyone** is encourage to
-contribute to this project.
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-[free-sw]: http://www.fsf.org/licensing/essays/free-sw.html
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
-Here are some ways *you* can contribute:
+## Contributing
 
-* by using alpha, beta, and pre-release versions
-* by reporting bugs
-* by suggesting new features
-* by writing or editing documenation
-* by writing specifications
-* by writing code (**no patch is too small**: fix typos, add comments,
-  clean up inconsistent whitespace, etc.)
-* by refactoring code
-* by closing [issues][]
-* by reviewing patches
-* [finacially][]
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/zotero. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-[issues]: https://github.com/waynegraham/zotero/issues
-[finacially]: http://pledgie.com/campaigns/16937
 
-All contributors will be added to the [history][] and will receive the
-respect and gratitude of the community.
+## License
 
-[history]: https://github.com/waynegraham/zotero/blob/master/HISTORY.md
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-## <a name="issues"></a>Submitting and Issue
-
-We use the [GitHub issue tracker][issues] to track bugs and features. Before
-submitting a bug report or feature request, check to make sure it hasn't
-already been submitted. You can indicate support for an existing issue by
-voting it up. When submitting a bug report, please include a [gist][] that
-includes a stack trace and any details that may be necessary to reproduce the
-bug, including your gem version, Ruby version, and operating system. Ideally, a
-bug report should include a pull request with failing specs.
-
-[gist]: https://gist.github.com/
-
-## <a name="pulls"></a>Submitting a Pull Request
-1. Fork the project.
-2. Create a topic branch.
-3. Implement your feature or bug fix.
-4. Add documentation for your feature or bug fix.
-5. Run `bundle exec rake yard`. If your changes are not 100% documented, go
-   back to step 4.
-6. Add specs for your feature or bug fix.
-7. Run `bundle exec rake spec`. If your changes are not 100% covered, go back
-   to step 6.
-8. Commit and push your changes.
-9. Submit a pull request. Please do not include changes to the gemspec,
-   version, or history file. (If you want to create your own version for some
-   reason, please do so in a separate commit.)
 
 ## <a name="versions"></a>Supported Ruby Versions
 This library aims to support and is [tested against][travis] the following Ruby
 implementations:
 
-* Ruby 1.9.2
-* Ruby 1.9.3
+* Ruby 2.4.0
+* Ruby 2.3.0
 * [JRuby][]
 
 [jruby]: http://www.jruby.org/
@@ -98,5 +80,4 @@ time of a major release, support for that Ruby version may be dropped.
 ## <a name="copyright"></a>Copyright
 Copyright (c) 2010 Wayne Graham. See [LICENSE][] for details.
 
-[license]: https://github.com/waynegraham/zotero/blob/master/LICENSE
-
+[license]: https://github.com/waynegraham/zotero/blob/master/LICENSE.txt

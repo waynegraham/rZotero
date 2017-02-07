@@ -1,40 +1,36 @@
-# -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "zotero/version"
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'zotero/version'
 
-Gem::Specification.new do |gem|
-  gem.name        = "zotero"
-  gem.version     = Zotero::VERSION
-  gem.authors     = ["Wayne Graham"]
-  gem.email       = ["wayne.graham@virginia.edu"]
-  gem.homepage    = "https://github.com/waynegraham/zotero"
-  gem.summary     = %q{Zotero API wrapper}
-  gem.description = %q{A Ruby wrapper for the Zotero API}
+Gem::Specification.new do |spec|
+  spec.name          = "zotero"
+  spec.version       = Zotero::VERSION
+  spec.authors       = ["Wayne Graham"]
+  spec.email         = ["wgraham@clir.org"]
 
-  gem.files         = `git ls-files`.split("\n")
-  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  gem.require_paths = ["lib"]
+  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
+  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.license       = "MIT"
 
-  gem.post_install_message =<<eos
-********************************************************************************
+  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
+  # to allow pushing to a single host or delete this section to allow pushing to any host.
+  if spec.respond_to?(:metadata)
+    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+  else
+    raise "RubyGems 2.0 or newer is required to protect against " \
+      "public gem pushes."
+  end
 
-  You should follow @wayne_graham on Twitter for announcement and updates about
-  the gem. https://twitter.com/wayne_graham
+  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(%r{^(test|spec|features)/})
+  end
+  spec.bindir        = "exe"
+  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.require_paths = ["lib"]
 
-  Please direct any issues to the issue tracker on Github 
-  https://github.com/waynegraham/zotero/issues
-
-********************************************************************************
-eos
-
-  # specify any dependencies here; for example:
-  gem.add_runtime_dependency 'faraday', '~> 0.7'
-
-  gem.add_development_dependency "rspec"
-  gem.add_development_dependency 'simplecov'
-  gem.add_development_dependency 'rake'
-  gem.add_development_dependency 'webmock'
-  gem.add_development_dependency 'yard'
-  # gem.add_runtime_dependency "rest-client"
+  spec.add_development_dependency "bundler", "~> 1.13"
+  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec", "~> 3.0"
 end
