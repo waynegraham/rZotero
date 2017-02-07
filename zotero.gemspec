@@ -38,5 +38,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "faraday", "~> 0.11.0"
   spec.add_dependency "json", "~> 2.0.3"
+  spec.add_dependency "oauth-active-resource", "0.4.7"
   spec.add_dependency "oauth", "~> 0.5.1"
 end
