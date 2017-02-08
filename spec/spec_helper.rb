@@ -10,11 +10,12 @@ def zotero_main_site
 end
 
 def zotero_settings
+    secret = YAML.load_file(File.expand_path('zotero/secrets.yml', 'lib'))
     {
         access_token: 'spec_test_access_token',
         access_secret: 'spec_test_access_secret',
-        consumer_token: 'spec_test_key',
-        consumer_secret: 'spec_test_secret',
+        consumer_token: secret['consumer_token'],
+        consumer_secret: secret['consumer_secret'],
         bad_consumer_token: 'bad_consumer_key',
         bad_consumer_secret: 'bad_consumer_secret'
     }
